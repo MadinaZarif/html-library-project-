@@ -19,7 +19,7 @@ public class Book {
     @Column(nullable = false)
     private String name;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "genre_id")
     private Genre genre;
 
